@@ -1,0 +1,25 @@
+{
+  "name": "test-preact-hydrate",
+  "private": true,
+  "description": "Preact hydrate test",
+  "license": "ISC",
+  "author": "mojahige (Yu Nozato)",
+  "scripts": {
+    "build": "tsc",
+    "dev": "npm run build -- --watch & npm run serve:watch -- --logLevel 'silent'",
+    "format": "npx rome format ./src",
+    "lint": "npx rome check ./src",
+    "serve": "browser-sync --server",
+    "serve:watch": "npm run serve -- --watch"
+  },
+  "devDependencies": {
+    "@markuplint/jsx-parser": "^3.6.1",
+    "@markuplint/react-spec": "^3.6.1",
+    "@preact/signals": "1.1.3",
+    "browser-sync": "^2.29.1",
+    "markuplint": "^3.7.0",
+    "preact": "10.13.2",
+    "rome": "^12.0.0",
+    "typescript": "^5.0.4"
+  }
+}
