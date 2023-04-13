@@ -48,4 +48,4 @@ jspm_packages/
 .vscode-test
 
 # App
-src/components/**/*.js
+src/**/*.js
