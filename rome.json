@@ -8,12 +8,12 @@
     "rules": {
       "recommended": true
     },
-    "ignore": ["src/components/**/*.js"]
+    "ignore": ["src/**/*.js"]
   },
   "formatter": {
     "enabled": true,
     "indentStyle": "space",
     "indentSize": 2,
-    "ignore": ["src/components/**/*.js"]
+    "ignore": ["src/**/*.js"]
   }
 }
