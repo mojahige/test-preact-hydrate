@@ -7,9 +7,10 @@
   "scripts": {
     "build": "tsc",
     "dev": "npm run build -- --watch & npm run serve:watch -- --logLevel 'silent'",
-    "format": "npx rome format ./src",
-    "lint": "npx rome check ./src",
+    "format": "rome format ./src",
+    "lint": "rome check ./src",
     "serve": "browser-sync --server",
+    "serve:watch": "browser-sync --server --watch",
     "test": "playwright test",
     "test:report": "playwright show-report",
     "test:ui": "playwright test --ui"
