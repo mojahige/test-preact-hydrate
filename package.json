@@ -7,8 +7,8 @@
   "scripts": {
     "build": "tsc",
     "dev": "npm run build -- --watch & npm run serve:watch -- --logLevel 'silent'",
-    "format": "rome format ./src",
-    "lint": "rome check ./src",
+    "format": "rome format ./src ./tests",
+    "lint": "rome check ./src ./tests",
     "serve": "browser-sync --server",
     "serve:watch": "browser-sync --server --watch",
     "test": "playwright test",
