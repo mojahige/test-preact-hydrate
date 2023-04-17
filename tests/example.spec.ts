@@ -9,7 +9,9 @@ test("Has h1 heading", async ({ page }) => {
   ).toHaveText("Preact hydrate test");
 });
 
-test("Counter component increment", async ({ page }) => {
+test("Click the 'increment' button updates the count display from 0 to 1", async ({
+  page,
+}) => {
   await page.goto("/", {
     waitUntil: "load",
   });
@@ -19,5 +21,8 @@ test("Counter component increment", async ({ page }) => {
   });
 
   await incrementButton.click();
-  await expect(page.getByText("Count:")).toContainText("1");
+
+  const countText = await page.getByText("Count:").textContent();
+
+  await expect(countText).toBe("Count: 1");
 });
