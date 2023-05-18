@@ -49,6 +49,7 @@ jspm_packages/
 
 # App
 src/**/*.js
+assets/javascripts/**/*.js
 /test-results/
 /playwright-report/
 /playwright/.cache/
