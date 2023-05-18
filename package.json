@@ -6,6 +6,7 @@
   "author": "mojahige (Yu Nozato)",
   "scripts": {
     "build": "tsc",
+    "clean": "rimraf ./assets/javascripts",
     "dev": "npm run build -- --watch & npm run serve:watch -- --logLevel 'silent'",
     "format": "rome format ./src ./tests",
     "lint": "rome check ./src ./tests",
@@ -27,6 +28,7 @@
     "jspm": "^3.0.0",
     "markuplint": "^3.10.0",
     "preact": "10.14.0",
+    "rimraf": "^5.0.1",
     "rome": "^12.1.0",
     "typescript": "^5.0.4",
     "vitest": "^0.31.0"
