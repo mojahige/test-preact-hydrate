@@ -1,7 +1,7 @@
 // @vitest-environment jsdom
 
 import { expect, test } from "vitest";
-import { isHtmlElement } from "../../src/mutation-observer";
+import { isHtmlElement } from "../../src/helpers/mutation-observer";
 
 test("isHtmlElement returns true if HTMLElement is passed.", () => {
   expect(isHtmlElement(document.createElement("div"))).toBe(true);
